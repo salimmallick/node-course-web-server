@@ -1,5 +1,6 @@
 const express = require('express');
 
+const port = process.env.PORT || 3000;
 var app = express();
 
 app.get('/', (req, res) => {
@@ -17,4 +18,4 @@ app.get('/bad', (req, res) => {
     });
 });
 
-app.listen(3000);
+app.listen(port);
